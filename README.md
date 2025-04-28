@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://python.org)
 [![Status](https://img.shields.io/badge/Status-Archived/Completed-lightgrey.svg)]() <!-- Or Active if you maintain it -->
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) <!-- Add a LICENSE file if applicable -->
+[![License](https://img.shields.io/badge/License-Apache2.0-green.svg)](LICENSE) <!-- Add a LICENSE file if applicable -->
 
 <p align="center">
   <img src="./Results/OCR_Text_Parsing.gif" alt="Invo-AI Demo GIF" width="600"/>
