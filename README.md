@@ -27,7 +27,6 @@ Manually extracting structured data (like vendor names, invoice numbers, line it
 *   **High Accuracy:** Achieved **87% precision** on key field extraction, **outperforming Google Cloud Vision's 80%** on the project's benchmark dataset.
 *   **Structured Output:** Exports extracted data to XML format for easy downstream integration.
 *   **Adaptable:** Core logic designed to handle variations in invoice templates.
-*   **[Optional Feature - Add if true]** Multi-language support capabilities via OCR engine.
 
 ## 🛠️ Core Approach & Technology
 
