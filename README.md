@@ -35,9 +35,9 @@ Invo-AI employs a multi-stage pipeline:
 
 1.  **Preprocessing:** Converts input PDFs to images and applies image enhancement techniques (Gaussian Blur, Binarization, Dilation/Erosion) to improve text clarity and structure detection.
 2.  **Layout Analysis & Text Detection:** Utilizes the **CRAFT (Character Region Awareness for Text Detection)** model to accurately detect text regions (words, lines) and their bounding boxes, effectively handling dense text and varied layouts. Custom logic identifies potential table regions based on detected grid structures or alignments.
-    *   *(Self-Correction Note: While EfficientDet was explored, CRAFT proved more effective for line/word level detection on the project data).*
+    *   *(Note: While EfficientDet was explored, CRAFT proved more effective for line/word level detection on the project data).*
 3.  **Optical Character Recognition (OCR):** Employs the **Tesseract OCR engine (LSTM)** to recognize characters within the detected bounding boxes.
-    *   *(Self-Correction Note: Explored other recognition models, but Tesseract provided strong performance, especially considering potential fine-tuning).*
+    *   *(Note: Explored other recognition models, but Tesseract provided strong performance, especially considering potential fine-tuning).*
 4.  **Information Extraction & Structuring:** Applies rule-based logic and keyword searching (e.g., "Invoice No", "Total Amount", table headers) on the OCR results and their spatial locations (bounding boxes) to:
     *   Identify and extract key-value pairs from the non-tabular sections.
     *   Detect table boundaries and extract line items row by row.
@@ -54,8 +54,8 @@ Invo-AI employs a multi-stage pipeline:
 *   **Language:** Python
 *   **Core Libraries:** OpenCV (`opencv-python`), Tesseract (`pytesseract`), NumPy
 *   **PDF Handling:** `pdf2image`
-*   **Deep Learning (Detection):** Model based on CRAFT (Implementation might use PyTorch/TensorFlow - specify if known)
-*   **[Optional: Add others like Pandas if used for structuring]**
+*   **Deep Learning (Detection):** Model based on CRAFT (Implementation used PyTorch)
+*   **Pandas/YOLOv10**
 
 ## 🚀 Getting Started
 
