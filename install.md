@@ -10,8 +10,8 @@ A python command line application to convert scanned invoice pdf to spreadsheet
 Clone the git repository:
 
 ```
-git clone https://github.com/Gauravism2017/Invo-AI.git
-cd Invo-AI
+git clone https://github.com/SaiSatyamJena/Table-Metadata-Recognization-and-Parsing.git
+cd  Table-Metadata-Recognization-and-Parsing
 ```
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requirements.
